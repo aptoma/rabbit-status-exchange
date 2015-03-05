@@ -13,6 +13,8 @@ run the following scripts in 3 different terminals:
 
 > php status.php
 
-> php consumer.php <consumer id>
+> php consumer.php [consumer id]
 
-> php producer.php <producer id>
+> php producer.php [producer id]
+
+where producer id and consumer id is some random name, just for testing
