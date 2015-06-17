@@ -48,6 +48,7 @@ class PackageTemplateClient {
 $request = new stdClass();
 $request->action = 'packageTemplateList';
 $request->method = 'GET';
+$request->accept = 'application/xml';
 $request->productId = '123';
 $request->sectionId = '456';
 $template_rpc = new PackageTemplateClient();
