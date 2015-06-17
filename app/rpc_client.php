@@ -46,11 +46,10 @@ class PackageTemplateClient {
 
 
 $request = new stdClass();
-$request->action = 'packageTemplateList';
+$request->resource = 'packageTemplates/123/456';
 $request->method = 'GET';
 $request->headers->accept = 'application/xml';
-$request->parameters->productId = '123';
-$request->parameters->sectionId = '456';
+$request->parameters->foo = 'bar';
 $template_rpc = new PackageTemplateClient();
 $response = $template_rpc->call(json_encode($request));
 echo " [.] Got ", $response, "\n";
