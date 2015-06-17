@@ -48,9 +48,9 @@ class PackageTemplateClient {
 $request = new stdClass();
 $request->action = 'packageTemplateList';
 $request->method = 'GET';
-$request->accept = 'application/xml';
-$request->productId = '123';
-$request->sectionId = '456';
+$request->headers->accept = 'application/xml';
+$request->parameters->productId = '123';
+$request->parameters->sectionId = '456';
 $template_rpc = new PackageTemplateClient();
 $response = $template_rpc->call(json_encode($request));
 echo " [.] Got ", $response, "\n";
